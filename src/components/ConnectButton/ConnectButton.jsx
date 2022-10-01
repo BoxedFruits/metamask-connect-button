@@ -19,7 +19,7 @@ export const ConnectButton = () => {
     const mouseY = useMotionValue(0);
 
     function Scene() {
-        const materials = useLoader(MTLLoader, "/metamaskfox.mtl");
+        const materials = useLoader(MTLLoader, "/fox.mtl");
         const obj = useLoader(OBJLoader, '/fox.obj', (loader) => {
             materials.preload();
             loader.setMaterials(materials);
